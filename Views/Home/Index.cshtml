@@ -1,0 +1,32 @@
+﻿@model OnePiece.ViewModels.HomeVM
+
+<div class="container " >
+    <nav>
+    @foreach (var tripulacao in Model.Tripulacoes)
+    {
+    <button class="btn">
+        @tripulacao.nome
+    </button>
+        
+    }
+    </nav>
+    
+    
+    <div class="row">
+        <div class="col mx-auto text-center">
+            <h1 class="display-4 text-white"><strong>Lista de Personagens</strong></h1>
+        </div>
+    </div>
+
+    <div class="Card2">
+        @foreach (var personagem in Model.Personagens)
+        {
+            <div class="Card1" style="background-color:@personagem.Cor;">
+                <div class="divImagem"><img src="@personagem.Imagem"></div>
+                <p>@personagem.Nome</p>  
+                <p><strong>Tripulaçao:</strong> @personagem.TRIPULACAO.nome</p> 
+            </div>
+            
+        }
+    </div>
+</div>

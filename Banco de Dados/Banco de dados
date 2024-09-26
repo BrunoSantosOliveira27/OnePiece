@@ -1,0 +1,43 @@
+CREATE DATABASE  ONE_PIECE;
+USE ONE_PIECE;
+
+CREATE TABLE FRUTA_DO_DIABO(
+ID INT PRIMARY KEY AUTO_INCREMENT,
+NOME VARCHAR (30),
+DESCRICAO TEXT
+);
+
+CREATE TABLE TRIPULACAO(
+ID INT PRIMARY KEY AUTO_INCREMENT,
+NOME TEXT
+);
+
+CREATE TABLE PERSONAGEM(
+ID INT PRIMARY KEY AUTO_INCREMENT,
+NOME VARCHAR (30),
+COR VARCHAR (30),
+IMAGEM VARCHAR (200),
+FRUTA_ID INT,
+TRIPULACAO_ID INT,
+FOREIGN KEY (FRUTA_ID) REFERENCES FRUTA_DO_DIABO(ID),
+FOREIGN KEY (TRIPULACAO_ID) REFERENCES TRIPULACAO(ID)
+);
+
+INSERT INTO FRUTA_DO_DIABO (NOME, DESCRICAO) VALUES 
+('Gomu Gomu no Mi','A Gomu Gomu no Mi, conhecida originalmente como Hito Hito no Mi, Modelo: Nika, é uma Akuma no Mi do tipo Zoan Mítica que permite ao usuário se transformar no lendário "Deus do Sol" Nika e ganhar seus atributos, notavelmente um corpo com 100% de propriedades da borracha'),
+('Ope Ope no Mi', 'Ope Ope no Mi, ou "Fruta da Operação". Ela concede ao usuário a capacidade de criar uma esfera, chamada de room, onde pode manipular tudo o que estiver dentro dela. Com essa fruta, Law pode realizar feitos como: Teletransporte, Manipulação de objetos, Cirurgias complexas. '),
+('Jiki Jiki no Mi','A Jiki Jiki no Mi é uma Akuma no Mi do tipo Paramecia, Que permite o usuário manipular as forças magnéticas e o metal a vontade, transformado o usuário em um Homem-Magnetismo');
+ 
+ SELECT * FROM FRUTA_DO_DIABO;
+  SELECT * FROM personagem;
+   SELECT * FROM tripulacao;
+ 
+ INSERT INTO TRIPULACAO (NOME) VALUES
+ ('Piratas dos Chapeus de palha'),
+ ('Piratas Heart'),
+ ('Piratas Kid');
+ 
+ INSERT INTO PERSONAGEM (NOME,COR,IMAGEM,FRUTA_ID,TRIPULACAO_ID) VALUES
+ ('Monkey D. Luffy','rgba(255, 0, 0)','\\img\\pirata\\001.png', 1, 1),
+ ('Trafalgar D. Water Law','rgba(125, 20, 101)','\\img\\pirata\\002.png', 2, 2),
+ ('Eustass Kid','rgba(255, 100, 0)','\\img\\pirata\\003.png', 3, 3);
