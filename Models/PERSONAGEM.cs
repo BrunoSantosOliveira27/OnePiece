@@ -17,10 +17,6 @@ public int id { get; set; }
 public string Nome { get; set; }
 
 [Required]
-[StringLength(30)]
-public String Cor { get; set; }
-
-[Required]
 [StringLength(200)]
 public string Imagem { get; set; }
 

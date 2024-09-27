@@ -4,7 +4,7 @@
     <nav>
     @foreach (var tripulacao in Model.Tripulacoes)
     {
-    <button class="btn">
+    <button class="btn" style="background-color: @tripulacao.Cor;">
         @tripulacao.nome
     </button>
         
@@ -21,12 +21,12 @@
     <div class="Card2">
         @foreach (var personagem in Model.Personagens)
         {
-            <div class="Card1" style="background-color:@personagem.Cor;">
+            <div class="Card1" style="background-color:@personagem.TRIPULACAO.Cor;">
                 <div class="divImagem"><img src="@personagem.Imagem"></div>
                 <p>@personagem.Nome</p>  
                 <p><strong>Tripulaçao:</strong> @personagem.TRIPULACAO.nome</p> 
             </div>
-            
+
         }
     </div>
 </div>

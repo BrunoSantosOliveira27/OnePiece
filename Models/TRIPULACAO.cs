@@ -14,4 +14,8 @@ public int id { get; set; }
 
 public string nome { get; set; }
 
+[Required]
+[StringLength(30)]
+public string Cor { get; set; }
+
  }
