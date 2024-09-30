@@ -26,18 +26,44 @@ FOREIGN KEY (TRIPULACAO_ID) REFERENCES TRIPULACAO(ID)
 INSERT INTO FRUTA_DO_DIABO (NOME, DESCRICAO) VALUES 
 ('Gomu Gomu no Mi','A Gomu Gomu no Mi, conhecida originalmente como Hito Hito no Mi, Modelo: Nika, é uma Akuma no Mi do tipo Zoan Mítica que permite ao usuário se transformar no lendário "Deus do Sol" Nika e ganhar seus atributos, notavelmente um corpo com 100% de propriedades da borracha'),
 ('Ope Ope no Mi', 'Ope Ope no Mi, ou "Fruta da Operação". Ela concede ao usuário a capacidade de criar uma esfera, chamada de room, onde pode manipular tudo o que estiver dentro dela. Com essa fruta, Law pode realizar feitos como: Teletransporte, Manipulação de objetos, Cirurgias complexas. '),
-('Jiki Jiki no Mi','A Jiki Jiki no Mi é uma Akuma no Mi do tipo Paramecia, Que permite o usuário manipular as forças magnéticas e o metal a vontade, transformado o usuário em um Homem-Magnetismo');
- 
- SELECT * FROM FRUTA_DO_DIABO;
-  SELECT * FROM personagem;
-   SELECT * FROM tripulacao;
+('Jiki Jiki no Mi','A Jiki Jiki no Mi é uma Akuma no Mi do tipo Paramecia, Que permite o usuário manipular as forças magnéticas e o metal a vontade, transformado o usuário em um Homem-Magnetismo'),
+('Hana Hana no Mi', 'Permite ao usuário fazer brotar partes do seu corpo (ou o corpo inteiro) em superfícies próximas, inclusive em outras pessoas.'),
+('Hito Hito no Mi', 'Permite ao usuário se transformar em um humano ou em uma forma híbrida entre humano e sua forma original. Chopper, sendo uma rena, adquiriu habilidades humanas.'),
+('Yomi Yomi no Mi', 'Permite ao usuário voltar à vida após a morte e controlar sua alma, além de ter algumas habilidades relacionadas à morte e espíritos.'),
+('Gura Gura no Mi', 'Permite ao usuário criar poderosas ondas de choque, capazes de causar terremotos e maremotos.'),
+('Tori Tori no Mi, Modelo: Fênix', 'Permite ao usuário se transformar em uma fênix, com habilidades de regeneração através de chamas azuis.'),
+('Mera Mera no Mi', 'Permite ao usuário criar, controlar e se transformar em fogo à vontade, transformando-o em um Homem-Fogo.'),
+('Hie Hie no Mi', 'Permite ao usuário criar, controlar e se transformar em gelo.'),
+('Magu Magu no Mi', 'Permite ao usuário criar, controlar e se transformar em magma.'),
+('Pika Pika no Mi', 'Permite ao usuário criar, controlar e se transformar em luz, tornando-se extremamente rápido.'),
+('Moku Moku no Mi', 'Permite ao usuário criar, controlar e se transformar em fumaça.'),
+('Yami Yami no Mi', 'Permite ao usuário criar e controlar a escuridão, e absorver tudo ao seu redor, incluindo ataques de Akuma no Mi.'),
+('Suke Suke no Mi', 'Permite ao usuário se tornar invisível e também tornar invisíveis objetos ou pessoas que estejam em contato direto com o usuário.'),
+('Riki Riki no Mi', 'Concede força sobre-humana ao usuário.'),
+('Shibo Shibo no Mi', 'Permite ao usuário desidratar qualquer coisa que toque.'),
+('Wapu Wapu no Mi', 'Permite ao usuário teleportar pessoas e objetos para longas distâncias.'),
+('Kira Kira no Mi', 'Permite ao usuário transformar seu corpo em diamante, concedendo uma defesa quase impenetrável e a capacidade de aumentar o poder de seus ataques físicos.');
  
  INSERT INTO TRIPULACAO (NOME,COR) VALUES
  ('Piratas dos Chapeus de palha','rgba(255, 0, 0)'),
  ('Piratas Heart','rgba(125, 20, 101)'),
- ('Piratas Kid','rgba(255, 100, 0)');
+ ('Piratas Kid','rgba(255, 100, 0)'),
+('Piratas do Barba Branca', 'rgba(0, 0, 255)'),
+('Marinha', 'rgba(0, 255, 0)'),
+('Piratas do Barba Negra', 'rgba(255, 165, 0)');
  
- INSERT INTO PERSONAGEM (NOME,IMAGEM,FRUTA_ID,TRIPULACAO_ID) VALUES
- ('Monkey D. Luffy','\\img\\pirata\\001.png', 1, 1),
- ('Trafalgar D. Water Law','\\img\\pirata\\002.png', 2, 2),
- ('Eustass Kid','\\img\\pirata\\003.png', 3, 3);
+INSERT INTO PERSONAGEM (NOME, IMAGEM, FRUTA_ID, TRIPULACAO_ID) VALUES ('Monkey D. Luffy', '\\img\\pirata\\001.png', 1, 1);
+INSERT INTO PERSONAGEM (NOME, IMAGEM, FRUTA_ID, TRIPULACAO_ID) VALUES ('Trafalgar D. Water Law', '\\img\\pirata\\002.png', 2, 2);
+INSERT INTO PERSONAGEM (NOME, IMAGEM, FRUTA_ID, TRIPULACAO_ID) VALUES ('Eustass Kid', '\\img\\pirata\\003.png', 3, 3);
+INSERT INTO PERSONAGEM (NOME, IMAGEM, FRUTA_ID, TRIPULACAO_ID) VALUES ('Nico Robin', '\\img\\pirata\\012.png', 4, 1);
+INSERT INTO PERSONAGEM (NOME, IMAGEM, FRUTA_ID, TRIPULACAO_ID) VALUES ('Tony Tony Chopper', '\\img\\pirata\\011.png', 5, 1);
+INSERT INTO PERSONAGEM (NOME, IMAGEM, FRUTA_ID, TRIPULACAO_ID) VALUES ('Brook', '\\img\\pirata\\014.png', 6, 1);
+INSERT INTO PERSONAGEM (NOME, IMAGEM, FRUTA_ID, TRIPULACAO_ID) VALUES ('Edward Newgate (Barba Branca)', '\\img\\pirata\\016.png', 7, 4);
+INSERT INTO PERSONAGEM (NOME, IMAGEM, FRUTA_ID, TRIPULACAO_ID) VALUES ('Marco', '\\img\\pirata\\017.png', 8, 4);
+INSERT INTO PERSONAGEM (NOME, IMAGEM, FRUTA_ID, TRIPULACAO_ID) VALUES ('Portgas D. Ace', '\\img\\pirata\\004.png', 9, 4);
+INSERT INTO PERSONAGEM (NOME, IMAGEM, FRUTA_ID, TRIPULACAO_ID) VALUES ('Kuzan (Aokiji)', '\\img\\marinha\\005.png', 10, 5);
+INSERT INTO PERSONAGEM (NOME, IMAGEM, FRUTA_ID, TRIPULACAO_ID) VALUES ('Sakazuki (Akainu)', '\\img\\marinha\\019.png', 11, 5);
+INSERT INTO PERSONAGEM (NOME, IMAGEM, FRUTA_ID, TRIPULACAO_ID) VALUES ('Borsalino (Kizaru)', '\\img\\marinha\\020.png', 12, 5);
+INSERT INTO PERSONAGEM (NOME, IMAGEM, FRUTA_ID, TRIPULACAO_ID) VALUES ('Smoker', '\\img\\marinha\\021.png', 13, 5);
+INSERT INTO PERSONAGEM (NOME, IMAGEM, FRUTA_ID, TRIPULACAO_ID) VALUES ('Marshall D. Teach (Barba Negra)', '\\img\\pirata\\006.png', 14, 6);
+INSERT INTO PERSONAGEM (NOME, IMAGEM, FRUTA_ID, TRIPULACAO_ID) VALUES ('Shiryu', '\\img\\pirata\\023.png', 15, 6);

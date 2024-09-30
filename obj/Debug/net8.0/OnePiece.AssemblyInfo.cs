@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OnePiece")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2d343c411acefd83ffa6b44eb5f09200cf835aa7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+039225606d75cc450561647519431c1ee0ba73b3")]
 [assembly: System.Reflection.AssemblyProductAttribute("OnePiece")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OnePiece")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

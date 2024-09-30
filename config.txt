@@ -1,0 +1,2 @@
+git config --global user.name BrunoSantosOliveira27
+git config --global user.email bruunoosanntos@outlook.com

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bruno\\Desktop\\OnePiece\\OnePiece.csproj": {}
+    "C:\\Users\\Bruno\\Desktop\\OnePiece-1\\OnePiece.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bruno\\Desktop\\OnePiece\\OnePiece.csproj": {
+    "C:\\Users\\Bruno\\Desktop\\OnePiece-1\\OnePiece.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bruno\\Desktop\\OnePiece\\OnePiece.csproj",
+        "projectUniqueName": "C:\\Users\\Bruno\\Desktop\\OnePiece-1\\OnePiece.csproj",
         "projectName": "OnePiece",
-        "projectPath": "C:\\Users\\Bruno\\Desktop\\OnePiece\\OnePiece.csproj",
+        "projectPath": "C:\\Users\\Bruno\\Desktop\\OnePiece-1\\OnePiece.csproj",
         "packagesPath": "C:\\Users\\Bruno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bruno\\Desktop\\OnePiece\\obj\\",
+        "outputPath": "C:\\Users\\Bruno\\Desktop\\OnePiece-1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Bruno\\AppData\\Roaming\\NuGet\\NuGet.Config"

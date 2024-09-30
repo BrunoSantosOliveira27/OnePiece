@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ruHglhUmC1o=",
+  "dgSpecHash": "OHgugWXneUw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bruno\\Desktop\\OnePiece\\OnePiece.csproj",
+  "projectFilePath": "C:\\Users\\Bruno\\Desktop\\OnePiece-1\\OnePiece.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bruno\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.8\\microsoft.entityframeworkcore.8.0.8.nupkg.sha512",
     "C:\\Users\\Bruno\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.8\\microsoft.entityframeworkcore.abstractions.8.0.8.nupkg.sha512",
